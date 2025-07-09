@@ -77,19 +77,28 @@ footer {
 
 @media (max-width: 1000px) {
   h1 {
-    margin-top: 8%;
+    margin-top: 5%;
     font-size: 3.5rem;
+    letter-spacing: 3.5px;
+    word-spacing: 2px;
   }
   .parent-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    margin-top: 10%;
-    width: 87vw;
+    margin-top: 8%;
+    width: 98.5vw;
+    border-radius: none;
   }
   .parent-container > [class^="div-"] {
-    height: 185px;
+    height: 275px;
     width: auto;
-    font-size: 4rem;
+    font-size: 6rem;
     /* text-shadow: none; */
+    border-radius: 0;
+  }
+  footer {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }

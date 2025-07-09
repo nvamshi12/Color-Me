@@ -28,81 +28,88 @@ ${randomNumGenerator()},
   }
 });
 
-const html = `<!-- Mammals & insertions -->
-<div class="div-1 coloring">🐕</div>
-<div class="div-2 coloring">🐈</div>
-<div class="div-3 coloring">🐇</div>
-<div class="div-4 coloring">🐿️</div>
-<div class="div-5 coloring">🐢</div>    <!-- tortoise -->
-<div class="div-6 coloring">🦋</div>    <!-- butterfly -->
-<div class="div-7 coloring">🐒</div>
-<div class="div-8 coloring">🦍</div>
-<div class="div-9 coloring">🦧</div>
-<div class="div-10 coloring">🦥</div>
-<div class="div-11 coloring">🦦</div>
-<div class="div-12 coloring">🦝</div>
-<div class="div-13 coloring">🦨</div>
-<div class="div-14 coloring">🦫</div>
-<div class="div-15 coloring">🐻</div>
-<div class="div-16 coloring">🐼</div>
-<div class="div-17 coloring">🐨</div>
-<div class="div-18 coloring">🐯</div>
-<div class="div-19 coloring">🦁</div>
-<div class="div-20 coloring">🐅</div>
-<div class="div-21 coloring">🐆</div>
-<div class="div-22 coloring">🐺</div>
-<div class="div-23 coloring">🐗</div>
-<div class="div-24 coloring">🐃</div>
-<div class="div-25 coloring">🐄</div>
-<div class="div-26 coloring">🦬</div>
-<div class="div-27 coloring">🐂</div>
-<div class="div-28 coloring">🦙</div>
-<div class="div-29 coloring">🐏</div>
-<div class="div-30 coloring">🐑</div>
-<div class="div-31 coloring">🐐</div>
-<div class="div-32 coloring">🦌</div>
-<div class="div-33 coloring">🐎</div>
-<div class="div-34 coloring">🐖</div>
-<div class="div-35 coloring">🐪</div>
-<div class="div-36 coloring">🐫</div>
-<div class="div-37 coloring">🐘</div>
-<div class="div-38 coloring">🦏</div>
-<div class="div-39 coloring">🦛</div>
-<div class="div-40 coloring">🦓</div>
-<div class="div-41 coloring">🦒</div>
-<div class="div-42 coloring">🦘</div>
+const html = `
+<h1>🫟 Color Me 🫟</h1>
+<div class="parent-container">
+  <!-- Mammals & insertions -->
+  <div class="div-1 coloring">🐕</div>
+  <div class="div-2 coloring">🐈</div>
+  <div class="div-3 coloring">🐇</div>
+  <div class="div-4 coloring">🐿️</div>
+  <div class="div-5 coloring">🐢</div>    <!-- tortoise -->
+  <div class="div-6 coloring">🦋</div>    <!-- butterfly -->
+  <div class="div-7 coloring">🐒</div>
+  <div class="div-8 coloring">🦍</div>
+  <div class="div-9 coloring">🦧</div>
+  <div class="div-10 coloring">🦥</div>
+  <div class="div-11 coloring">🦦</div>
+  <div class="div-12 coloring">🦝</div>
+  <div class="div-13 coloring">🦨</div>
+  <div class="div-14 coloring">🦫</div>
+  <div class="div-15 coloring">🐻</div>
+  <div class="div-16 coloring">🐼</div>
+  <div class="div-17 coloring">🐨</div>
+  <div class="div-18 coloring">🐯</div>
+  <div class="div-19 coloring">🦁</div>
+  <div class="div-20 coloring">🐅</div>
+  <div class="div-21 coloring">🐆</div>
+  <div class="div-22 coloring">🐺</div>
+  <div class="div-23 coloring">🐗</div>
+  <div class="div-24 coloring">🐃</div>
+  <div class="div-25 coloring">🐄</div>
+  <div class="div-26 coloring">🦬</div>
+  <div class="div-27 coloring">🐂</div>
+  <div class="div-28 coloring">🦙</div>
+  <div class="div-29 coloring">🐏</div>
+  <div class="div-30 coloring">🐑</div>
+  <div class="div-31 coloring">🐐</div>
+  <div class="div-32 coloring">🦌</div>
+  <div class="div-33 coloring">🐎</div>
+  <div class="div-34 coloring">🐖</div>
+  <div class="div-35 coloring">🐪</div>
+  <div class="div-36 coloring">🐫</div>
+  <div class="div-37 coloring">🐘</div>
+  <div class="div-38 coloring">🦏</div>
+  <div class="div-39 coloring">🦛</div>
+  <div class="div-40 coloring">🦓</div>
+  <div class="div-41 coloring">🦒</div>
+  <div class="div-42 coloring">🦘</div>
 
-<!-- Birds -->
-<div class="div-43 coloring">🐥</div>
-<div class="div-44 coloring">🐔</div>
-<div class="div-45 coloring">🐓</div>
-<div class="div-46 coloring">🪿</div>
-<div class="div-47 coloring">🦆</div>
-<div class="div-48 coloring">🦢</div>
-<div class="div-49 coloring">🦩</div>
-<div class="div-50 coloring">🐧</div>
-<div class="div-51 coloring">🕊️</div>
-<div class="div-52 coloring">🦅</div>
-<div class="div-53 coloring">🦉</div>
-<div class="div-54 coloring">🦃</div>
-<div class="div-55 coloring">🦜</div>
-<div class="div-56 coloring">🦚</div>
-<div class="div-57 coloring">🦤</div>
+  <!-- Birds -->
+  <div class="div-43 coloring">🐥</div>
+  <div class="div-44 coloring">🐔</div>
+  <div class="div-45 coloring">🐓</div>
+  <div class="div-46 coloring">🪿</div>
+  <div class="div-47 coloring">🦆</div>
+  <div class="div-48 coloring">🦢</div>
+  <div class="div-49 coloring">🦩</div>
+  <div class="div-50 coloring">🐧</div>
+  <div class="div-51 coloring">🕊️</div>
+  <div class="div-52 coloring">🦅</div>
+  <div class="div-53 coloring">🦉</div>
+  <div class="div-54 coloring">🦃</div>
+  <div class="div-55 coloring">🦜</div>
+  <div class="div-56 coloring">🦚</div>
+  <div class="div-57 coloring">🦤</div>
 
-<!-- Fish & Marine Mammals -->
-<div class="div-58 coloring">🐟</div>
-<div class="div-59 coloring">🐠</div>
-<div class="div-60 coloring">🐡</div>
-<div class="div-61 coloring">🐬</div>
-<div class="div-62 coloring">🐳</div>
-<div class="div-63 coloring">🐋</div>
+  <!-- Fish & Marine Mammals -->
+  <div class="div-58 coloring">🐟</div>
+  <div class="div-59 coloring">🐠</div>
+  <div class="div-60 coloring">🐡</div>
+  <div class="div-61 coloring">🐬</div>
+  <div class="div-62 coloring">🐳</div>
+  <div class="div-63 coloring">🐋</div>
 
-<!-- Invertebrates -->
-<div class="div-64 coloring">🐙</div>
-<div class="div-65 coloring">🦀</div>
-<div class="div-66 coloring">🐌</div>
-<div class="div-67 coloring">🐦‍🔥</div>
-<div class="div-68 coloring">🦕</div>
+  <!-- Invertebrates -->
+  <div class="div-64 coloring">🐙</div>
+  <div class="div-65 coloring">🦀</div>
+  <div class="div-66 coloring">🐌</div>
+  <div class="div-67 coloring">🐦‍🔥</div>
+  <div class="div-68 coloring">🦄</div>
+  <div class="div-69 coloring">🦕</div>
+  </div>
+<footer>Made by 💛amshi</footer>
+
 `;
 
 const mobileDeviceCheck = window.matchMedia("(max-width: 1000px)");
@@ -110,8 +117,8 @@ const mobileDeviceCheck = window.matchMedia("(max-width: 1000px)");
 function handleDeviceChange(e) {
   if (e.matches) {
     console.log("This is a mobile device");
-    parentContainer.innerHTML = "";
-    parentContainer.innerHTML = html;
+    document.querySelector("body").innerHTML = "";
+    document.querySelector("body").innerHTML = html;
   }
 }
 mobileDeviceCheck.addEventListener("change", handleDeviceChange);
