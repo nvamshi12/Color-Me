@@ -1,5 +1,5 @@
 const allDivs = document.querySelectorAll("div > div");
-const parentContainer = document.querySelector(".parent-container");
+let parentContainer = document.querySelector(".parent-container");
 console.log(allDivs);
 
 function randomNumGenerator() {
@@ -15,18 +15,6 @@ ${randomNumGenerator()},
     ${randomNumGenerator()}
   )`;
 }
-
-parentContainer.addEventListener("click", function (e) {
-  console.log(e.target);
-  if (e.target.classList.contains("coloring")) {
-    console.log(e.target);
-    e.target.style.backgroundColor = `rgb(
-${randomNumGenerator()},
-   ${randomNumGenerator()},
-    ${randomNumGenerator()}
-  )`;
-  }
-});
 
 const html = `
 <h1>🫟 Color Me 🫟</h1>
@@ -119,8 +107,35 @@ function handleDeviceChange(e) {
     console.log("This is a mobile device");
     document.querySelector("body").innerHTML = "";
     document.querySelector("body").innerHTML = html;
+    parentContainer = document.querySelector(".parent-container");
   }
 }
 mobileDeviceCheck.addEventListener("change", handleDeviceChange);
 
 handleDeviceChange(mobileDeviceCheck);
+
+parentContainer.addEventListener("click", function (e) {
+  console.log(e.target);
+  if (e.target.classList.contains("coloring")) {
+    console.log(e.target);
+    e.target.style.backgroundColor = `rgb(
+${randomNumGenerator()},
+   ${randomNumGenerator()},
+    ${randomNumGenerator()}
+  )`;
+  }
+});
+
+// To prevent zooming on double-click / triple-click
+let lastTouchEnd = 0;
+document.addEventListener(
+  "touchend",
+  (e) => {
+    const now = Date.now();
+    if (now - lastTouchEnd <= 100) {
+      e.preventDefault();
+    }
+    lastTouchEnd = now;
+  },
+  false
+);
