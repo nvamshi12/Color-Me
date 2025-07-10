@@ -40,6 +40,7 @@ h1 {
   background-color: deepskyblue;
   background-color: #0a0a32;
   background-color: #0d0d6f;
+  /* background-color: white; */
   color: white;
   border: 0.01px solid #ffffff;
   padding: 0.5rem;
@@ -54,21 +55,22 @@ h1 {
   user-select: none;
 }
 /* .div-1 {
-  border-radius: 1rem 0 0 0;
+  border-radius: 1.32rem 0 0 0;
   border-color: #ffffff;
 }
 .div-21 {
-  border-radius: 0 0 0 1.02rem;
+  border-radius: 0 0 0 1.32rem;
   border-color: #ffffff;
 }
 .div-5 {
-  border-radius: 0 1rem 0 0;
+  border-radius: 0 1.32rem 0 0;
   border-color: #ffffff;
 }
 .div-25 {
-  border-radius: 0 0 1.04rem 0;
+  border-radius: 0 0 1.32rem 0;
   border-color: #ffffff;
 } */
+
 footer {
   text-align: center;
   margin-top: 2rem;
@@ -90,16 +92,33 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     margin-top: 5%;
-    width: 98.5vw;
+    width: 99%;
     border-radius: none;
-    box-shadow: 2px 4px 16px rgb(229, 15, 147);
+    box-shadow: 1px 2px 16px rgb(229, 15, 147);
+    margin-left: 0;
   }
   .parent-container > [class^="div-"] {
     height: 130px;
     width: auto;
     font-size: 3.5rem;
     text-shadow: none;
-    border-radius: 0;
+    /* border-radius: 0; */
+  }
+  .div-1 {
+    border-radius: 1.32rem 0 0 0;
+    border-color: #ffffff;
+  }
+  .div-67 {
+    border-radius: 0 0 0 1.32rem;
+    border-color: #ffffff;
+  }
+  .div-3 {
+    border-radius: 0 1.32rem 0 0;
+    border-color: #ffffff;
+  }
+  .div-69 {
+    border-radius: 0 0 1.32rem 0;
+    border-color: #ffffff;
   }
   footer {
     font-size: 1rem;
